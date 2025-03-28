@@ -258,11 +258,40 @@ footer {
 }
 
 /* Updated Header styles */
+/* Profile image styles */
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 30px;
     flex-wrap: wrap;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0062cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-text {
+        text-align: center;
+    }
 }
 
 .header-text {
