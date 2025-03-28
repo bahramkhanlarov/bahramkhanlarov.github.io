@@ -256,3 +256,41 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+
+/* Updated Header styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.header-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.header-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .header-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
