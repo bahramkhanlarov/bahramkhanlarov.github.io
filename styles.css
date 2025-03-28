@@ -215,3 +215,44 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Certifications section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.certification-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.certification-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0062cc;
+}
+
+.certification-card p {
+    color: #666;
+    font-size: 0.9rem;
+}
